@@ -81,7 +81,7 @@
     <div class="header-content">
         <div class="header-wrapper">
             <h1 class="header-logo">
-                <a href="/" class="header-logo-link">noel.<span>fun</span></a>
+                <a href="/" class="header-logo-link">100<span>quotes</span></a>
             </h1>
             <nav class="nav">
                 <a class="nav-link icon icon--arrow-downward" href="#about">About</a>
@@ -94,7 +94,7 @@
 
 <main class="main">
     <div class="main-content">
-        <p class="tagline">Share a fun fact with your friends!</p>
+        <p class="tagline">Share a quote with your friends!</p>
         <div class="search">
             <div class="search-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -105,7 +105,7 @@
                 <input id="filterSearch" type="text" placeholder="Search for a fact..." />
                 
             </div>
-            <p>Showing <span id="filterNumOf">104</span> of <span id="filterNumTot">104</span> facts</p>
+            <p>Showing <span id="filterNumOf">104</span> of <span id="filterNumTot">104</span> quoted</p>
             <p class="empty-state" id="filterEmptyState">
                 (¬_¬ )
             </p>
@@ -124,17 +124,17 @@
                         <p class="fact-info">
                             {{ post.data.fact | safe }}
                         </p>
-                        <a href="https://twitter.com/share?text=Fun fact: &quot;{{ post.data.fact | safe }}&quot; From: &url=noel.fun" target="_blank" rel="noopener" class="fact-source-link icon icon--arrow-forward">Share on Twitter</a>
+                        <a href="https://twitter.com/share?text=Fun fact: &quot;{{ post.data.fact | safe }}&quot; From: &url=100quotrs.vercel.app" target="_blank" rel="noopener" class="fact-source-link icon icon--arrow-forward">Share on Twitter</a>
 
                     {% endif %}
 
                     {% if post.data.badge %}
-                        <span class="fact-badge">Classic go-to</span>
+                        <span class="fact-badge">Top 10</span>
                     {% endif %}
                 </div>
             {% endfor %}
             <div class="facts-actions">
-                <button class="button button--unfold" id="factListToggle">View all facts</button>
+                <button class="button button--unfold" id="factListToggle">View all quotes</button>
             </div>
         </div>
     </div>
@@ -152,7 +152,7 @@
 </main>
 <footer class="footer">
     <div class="footer-content md-content">
-        <p>Made with <a href="https://www.11ty.dev/">11ty</a>. View on <a href="https://github.com/havardob/noel">Github</a>. Color theme switcher inspired by <a href="https://mxb.dev/blog/color-theme-switcher/">Max Böck</a>
+        <p>Made with <a href="https://www.11ty.dev/">11ty</a>. View on <a href="https://github.com/uvacoder/abc-100-quotes">Github</a>. Color theme switcher inspired by <a href="https://mxb.dev/blog/color-theme-switcher/">Max Böck</a>
         </p>
     </div>
 </footer>
